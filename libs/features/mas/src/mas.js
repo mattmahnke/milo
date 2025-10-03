@@ -42,6 +42,18 @@ import {
   FriesCard,
 } from './variants/fries.js';
 
+//Import mm-test-01
+import {
+  MM_TEST_01_AEM_FRAGMENT_MAPPING,
+  MmTest01,
+} from './variants/mm-test-01.js';
+
+//Import mm-test-02
+import {
+  MM_TEST_02_AEM_FRAGMENT_MAPPING,
+  MmTest02,
+} from './variants/mm-test-02.js';
+
 // Register dynamic variants
 registerVariant(
     'ccd-suggested',
@@ -72,4 +84,16 @@ registerVariant(
   FriesCard,
   FRIES_AEM_FRAGMENT_MAPPING,
   FriesCard.variantStyle,
+);
+registerVariant(
+  'mm-test-01',
+  MmTest01,
+  MM_TEST_01_AEM_FRAGMENT_MAPPING,
+  MmTest01.variantStyle,
+);
+registerVariant(
+  'mm-test-02',
+  MmTest02,
+  MM_TEST_02_AEM_FRAGMENT_MAPPING,
+  MmTest02.variantStyle,
 );
