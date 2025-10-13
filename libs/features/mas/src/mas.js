@@ -42,17 +42,11 @@ import {
   FriesCard,
 } from './variants/fries.js';
 
-//Import mm-test-01
+//Import three-in-one
 import {
-  MM_TEST_01_AEM_FRAGMENT_MAPPING,
-  MmTest01,
-} from './variants/mm-test-01.js';
-
-//Import mm-test-02
-import {
-  MM_TEST_02_AEM_FRAGMENT_MAPPING,
-  MmTest02,
-} from './variants/mm-test-02.js';
+  THREE_IN_ONE_AEM_FRAGMENT_MAPPING,
+  ThreeInOne,
+} from './variants/three-in-one.js';
 
 // Register dynamic variants
 registerVariant(
@@ -86,14 +80,8 @@ registerVariant(
   FriesCard.variantStyle,
 );
 registerVariant(
-  'mm-test-01',
-  MmTest01,
-  MM_TEST_01_AEM_FRAGMENT_MAPPING,
-  MmTest01.variantStyle,
-);
-registerVariant(
-  'mm-test-02',
-  MmTest02,
-  MM_TEST_02_AEM_FRAGMENT_MAPPING,
-  MmTest02.variantStyle,
+  'three-in-one',
+  ThreeInOne,
+  THREE_IN_ONE_AEM_FRAGMENT_MAPPING,
+  ThreeInOne.variantStyle,
 );
